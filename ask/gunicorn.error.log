@@ -1,0 +1,65 @@
+2016-03-10 06:13:01 [140] [INFO] Starting gunicorn 17.5
+2016-03-10 06:13:01 [140] [INFO] Listening at: http://0.0.0.0:8000 (140)
+2016-03-10 06:13:01 [140] [INFO] Using worker: sync
+2016-03-10 06:13:01 [145] [INFO] Booting worker with pid: 145
+2016-03-10 06:13:01 [146] [INFO] Booting worker with pid: 146
+2016-03-10 06:13:08 [145] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 126, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 187, in __call__
+    self.load_middleware()
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py", line 44, in load_middleware
+    for middleware_path in settings.MIDDLEWARE_CLASSES:
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 54, in __getattr__
+    self._setup(name)
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 49, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 128, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/lib/python2.7/dist-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/box/web/ask/ask/settings.py", line 40
+    INSTALLED_APPS = ('qa',) + tuple(INSTALLED_APPS)
+    ^
+IndentationError: unexpected indent
+2016-03-10 06:13:08 [145] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 126, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 187, in __call__
+    self.load_middleware()
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py", line 44, in load_middleware
+    for middleware_path in settings.MIDDLEWARE_CLASSES:
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 54, in __getattr__
+    self._setup(name)
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 49, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 128, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/lib/python2.7/dist-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/box/web/ask/ask/settings.py", line 40
+    INSTALLED_APPS = ('qa',) + tuple(INSTALLED_APPS)
+    ^
+IndentationError: unexpected indent
+2016-03-10 06:13:51 [146] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 126, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 187, in __call__
+    self.load_middleware()
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py", line 44, in load_middleware
+    for middleware_path in settings.MIDDLEWARE_CLASSES:
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 54, in __getattr__
+    self._setup(name)
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 49, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 128, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/lib/python2.7/dist-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/box/web/ask/ask/settings.py", line 40
+    INSTALLED_APPS = ('qa',) + tuple(INSTALLED_APPS)
+    ^
+IndentationError: unexpected indent
