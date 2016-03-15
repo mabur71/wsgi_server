@@ -1,0 +1,8 @@
+<html>
+<head>{% block title %}Title{% endblock %}</head>
+<body>
+	<div>
+		{% block body %}body{% endblock %}
+	</div>
+</body>
+</html>

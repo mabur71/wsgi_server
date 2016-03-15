@@ -1,0 +1,21 @@
+{% extends 'layout.html'%}
+
+
+{% block title %} Title: {{title}}  {% endblock %}
+
+
+{% block body  %}
+{% for post in posts.all%}
+<div><a href="{{post.get_url}}">{{ post.title }}</a></div>
+{% endfor %}
+
+<nav>
+{% for p in paginator.page_range %}
+{% if p == page.number %}
+({{p}})
+{% else %}
+<a href="{{ paginator.baseurl }}{{ p }}">{{p}}</a>
+{% endif %}
+{% endfor %}
+</nav>
+{% endblock %}

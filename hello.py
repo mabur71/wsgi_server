@@ -12,7 +12,8 @@ def app(environ, start_response):
 
     reqs1 = [urllib.unquote(x) + "\n\r" for x in reqs]
 
-    data = "".join(reqs1)
+    data = "Python version: " + (sys.version) + "\n\r"
+    data += "".join(reqs1)
 
     start_response("200 OK", [
 
