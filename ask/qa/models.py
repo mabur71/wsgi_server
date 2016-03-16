@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
+import logging
 
+logger = logging.getLogger(__name__)
 # Create your models here.
 
 class Question(models.Model):
@@ -13,6 +15,7 @@ class Question(models.Model):
 	def __unicode__(self):
 		return self.title
 	def get_url(self):
+		logger.error('Something went wrong!')	
 		return '/question/%d/' % self.pk
 	class Meta:
 		db_table = 'question_post'

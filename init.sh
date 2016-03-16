@@ -1,4 +1,4 @@
-udo rm -f /etc/nginx/sites-enabled/default
+sudo rm -f /etc/nginx/sites-enabled/default
 #sudo kill `pidof python`
 sudo ln -sf /home/`echo $USER`/web/etc/nginx.conf  /etc/nginx/sites-enabled/test.conf
 sudo /etc/init.d/nginx restart

@@ -63,3 +63,26 @@ Traceback (most recent call last):
     INSTALLED_APPS = ('qa',) + tuple(INSTALLED_APPS)
     ^
 IndentationError: unexpected indent
+2016-03-16 11:25:35 [1096] [INFO] Starting gunicorn 17.5
+2016-03-16 11:25:35 [1096] [INFO] Listening at: http://0.0.0.0:8000 (1096)
+2016-03-16 11:25:35 [1096] [INFO] Using worker: sync
+2016-03-16 11:25:35 [1101] [INFO] Booting worker with pid: 1101
+2016-03-16 11:25:35 [1102] [INFO] Booting worker with pid: 1102
+2016-03-16 11:26:06 [1096] [INFO] Handling signal: term
+2016-03-16 11:26:06 [1101] [INFO] Worker exiting (pid: 1101)
+2016-03-16 11:26:06 [1102] [INFO] Worker exiting (pid: 1102)
+2016-03-16 11:26:06 [1096] [INFO] Shutting down: Master
+2016-03-16 11:26:06 [1191] [INFO] Starting gunicorn 17.5
+2016-03-16 11:26:06 [1191] [INFO] Listening at: http://0.0.0.0:8000 (1191)
+2016-03-16 11:26:06 [1191] [INFO] Using worker: sync
+2016-03-16 11:26:06 [1197] [INFO] Booting worker with pid: 1197
+2016-03-16 11:26:06 [1198] [INFO] Booting worker with pid: 1198
+2016-03-16 11:34:44 [1191] [INFO] Handling signal: term
+2016-03-16 11:34:44 [1198] [INFO] Worker exiting (pid: 1198)
+2016-03-16 11:34:44 [1197] [INFO] Worker exiting (pid: 1197)
+2016-03-16 11:34:45 [1191] [INFO] Shutting down: Master
+2016-03-16 11:34:45 [1300] [INFO] Starting gunicorn 17.5
+2016-03-16 11:34:45 [1300] [INFO] Listening at: http://0.0.0.0:8000 (1300)
+2016-03-16 11:34:45 [1300] [INFO] Using worker: sync
+2016-03-16 11:34:45 [1306] [INFO] Booting worker with pid: 1306
+2016-03-16 11:34:45 [1307] [INFO] Booting worker with pid: 1307
