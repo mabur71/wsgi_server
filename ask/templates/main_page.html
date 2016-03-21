@@ -1,21 +1,71 @@
 {% extends 'layout.html'%}
 
 
-{% block title %} Title: {{title}}  {% endblock %}
+
+
+
+{% block title %}
+
+{% endblock %}
+
+
+
 
 
 {% block body  %}
+
+<ul>
+
+	<li style="display:inline"><a href="/">Главная</a></li>
+
+	<li style="display:inline"><a href="/popular/">Популярные</a></li>
+
+	<li style="display:inline"><a href="/ask/">Задать вопрос</a></li>
+
+	<li style="display:inline"><a href="/signup/">Регистрация</a></li>
+
+	<li style="display:inline"><a href="/login/">Войти</a></li>
+
+	<li style="display:inline"><a href="/logout/">Выйти</a></li>
+
+</ul>
+
+Hello, {% if user.is_authenticated %}{{ user.username }}{% else %}anonymous{% endif %}.
+
+
+
+<h2>{{title}}</h2>
+
 {% for post in posts.all%}
-<div><a href="{{post.get_url}}">{{ post.title }}</a></div>
+
+<div>
+
+	<a href="{{post.get_url}}">{{ post.title }}</a>
+
+	(author: {{post.author}})
+
+</div>
+
 {% endfor %}
 
+
+
 <nav>
+
 {% for p in paginator.page_range %}
+
 {% if p == page.number %}
+
 ({{p}})
+
 {% else %}
+
 <a href="{{ paginator.baseurl }}{{ p }}">{{p}}</a>
+
 {% endif %}
+
 {% endfor %}
+
 </nav>
+
 {% endblock %}

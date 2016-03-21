@@ -1,13 +1,47 @@
 {% extends 'layout.html'%}
 
+
+
 {% block title %} Title: {{title}}  {% endblock %}
 
 
+
+
+
 {% block body  %}
+
+
+
 Text: {{text}}
-{% for answer in answers%}                                                                           
+
+
+
+<form method="post" action="/answer/">                                                                           
+
+{% csrf_token %}                                                                                              
+
+{{ form.as_p }}                                                                                               
+
+<div class="form-actions">                                                                                    
+
+<button type="submit" class="btn btn-primary">Ответить</button>                                              
+
+</div>                                                                                                        
+
+</form>
+
 <div>
-*{{answer.text}}                                                                                                       
+
+
+
+{% for answer in answers%}                                                                           
+
+<div>
+
+	*{{answer.text}} (author: {{answer.author}})
+
 </div>
+
 {% endfor %}
+
 {% endblock %}

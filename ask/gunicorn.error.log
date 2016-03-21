@@ -86,3 +86,8 @@ IndentationError: unexpected indent
 2016-03-16 11:34:45 [1300] [INFO] Using worker: sync
 2016-03-16 11:34:45 [1306] [INFO] Booting worker with pid: 1306
 2016-03-16 11:34:45 [1307] [INFO] Booting worker with pid: 1307
+2016-03-21 08:32:05 [700] [INFO] Starting gunicorn 17.5
+2016-03-21 08:32:05 [700] [INFO] Listening at: http://0.0.0.0:8000 (700)
+2016-03-21 08:32:05 [700] [INFO] Using worker: sync
+2016-03-21 08:32:05 [706] [INFO] Booting worker with pid: 706
+2016-03-21 08:32:05 [709] [INFO] Booting worker with pid: 709

@@ -1,0 +1,25 @@
+{% extends 'layout.html'%}
+
+
+
+{% block title %} <h2>Введите вопрос</h2>  {% endblock %}
+
+
+
+{% block body  %}
+
+<form method="post" action="/ask/">
+
+{% csrf_token %}	
+
+{{ form.as_p }}
+
+<div class="form-actions">
+
+<button type="submit" class="btn btn-primary">Сохранить</button>
+
+</div>
+
+</form>
+
+{% endblock %}

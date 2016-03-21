@@ -1,30 +1,59 @@
 from django.db import models
-from django.contrib.auth.models import User
-import logging
 
-logger = logging.getLogger(__name__)
+from django.contrib.auth.models import User
+
+
+
 # Create your models here.
 
+
+
 class Question(models.Model):
+
 	title = models.CharField(max_length=255)
+
 	text = models.TextField()
+
         added_at = models.DateTimeField(auto_now_add=True)
+
 	rating = models.IntegerField(default=0)
+
 	author = models.ForeignKey(User)
+
 	likes = models.TextField()
+
 	def __unicode__(self):
-		return self.title
+
+	    return self.title
+
 	def get_url(self):
-		logger.error('Something went wrong!')	
-		return '/question/%d/' % self.pk
+
+	    return '/question/%d/' % self.pk
+
+	#def save(self):
+
+        #    question = Question(**self.cleaned_data)
+
+        #    return question 
+
 	class Meta:
+
 		db_table = 'question_post'
+
 		ordering = ['-id']
 
 
+
+
+
 class Answer(models.Model):
+
 	text = models.TextField()
+
 	added_at = models.DateTimeField(auto_now_add=True)
+
 	question = models.ForeignKey(Question)
+
 	author = models.ForeignKey(User)
+
 
