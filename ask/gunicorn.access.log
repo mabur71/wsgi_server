@@ -15,3 +15,6 @@
 "10.42.234.66 - - [21/Mar/2016:08:48:39] "GET /?page=2 HTTP/1.0" 200 - "-" "Python-urllib/2.7"
 "10.42.234.66 - - [21/Mar/2016:08:48:39] "GET /popular/?page=2 HTTP/1.0" 200 - "-" "Python-urllib/2.7"
 "10.42.234.66 - - [21/Mar/2016:08:48:39] "GET /question/3141592/ HTTP/1.0" 200 - "-" "Python-urllib/2.7"
+"10.42.234.66 - - [21/Mar/2016:09:24:40] "GET /ask/ HTTP/1.0" 200 - "-" "Python-urllib/2.7"
+"10.42.234.66 - - [21/Mar/2016:09:24:40] "POST /ask/ HTTP/1.0" 200 - "-" "Python-urllib/2.7"
+"127.0.0.1 - - [21/Mar/2016:09:26:01] "GET /ask/ HTTP/1.1" 200 - "-" "curl/7.35.0"
