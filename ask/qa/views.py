@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from django.http import Http404
 
 from django.shortcuts import render
@@ -15,6 +13,10 @@ from django.http import HttpResponseRedirect
 from .models import Question
 
 from qa.forms import AskForm, AnswerForm, SignupForm, LoginForm 
+
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 
@@ -32,11 +34,23 @@ def test(request, *args, **kwargs):
 
 def add_ask_page(request):
 
+    logger.debug("add_ask_page() !")
+
     if request.method == "POST":
+
+        logger.debug("add_ask_page():  method POST")
+
+        logger.debug("add_ask_page(): POST params - " + ", ".join(request.POST))
+
+        logger.debug("add_ask_page(): POST[author]=" + request.POST.get('author','-'))
 
         form = AskForm(request.POST)
 
+        logger.debug("add_ask_page():  form created")
+
         if form.is_valid():
+
+            logger.debug("add_ask_page():  form is valid")
 
             question = form.save()
 
@@ -44,9 +58,21 @@ def add_ask_page(request):
 
             return HttpResponseRedirect(url)
 
+        else:
+
+            logger.debug("add_ask_page():  form is not valid")
+
+            logger.debug("error:" + " ".join(form.errors))
+
+            
+
     else:
 
+        logger.debug("add_ask_page():  metod GET")
+
         form = AskForm(initial={'author':request.user.id})
+
+    logger.debug("add_ask_page(): return render")
 
     return render(request, 'add_ask.html', {
 
@@ -89,6 +115,8 @@ def main_page(request):
     paginator.baseurl = '/?page='
 
     page = paginator.page(page) # Page
+    
+    logger.debug("main_page limit - " + ", ".join(limit))
 
     return render(request, 'main_page.html', {
 
@@ -261,3 +289,5 @@ def logout_page(request):
     logout(request)
 
     return  HttpResponseRedirect('/')
+
+

@@ -1,98 +1,14 @@
-2016-03-10 06:13:01 [140] [INFO] Starting gunicorn 17.5
-2016-03-10 06:13:01 [140] [INFO] Listening at: http://0.0.0.0:8000 (140)
-2016-03-10 06:13:01 [140] [INFO] Using worker: sync
-2016-03-10 06:13:01 [145] [INFO] Booting worker with pid: 145
-2016-03-10 06:13:01 [146] [INFO] Booting worker with pid: 146
-2016-03-10 06:13:08 [145] [ERROR] Error handling request
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 126, in handle_request
-    respiter = self.wsgi(environ, resp.start_response)
-  File "/usr/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 187, in __call__
-    self.load_middleware()
-  File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py", line 44, in load_middleware
-    for middleware_path in settings.MIDDLEWARE_CLASSES:
-  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 54, in __getattr__
-    self._setup(name)
-  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 49, in _setup
-    self._wrapped = Settings(settings_module)
-  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 128, in __init__
-    mod = importlib.import_module(self.SETTINGS_MODULE)
-  File "/usr/lib/python2.7/dist-packages/django/utils/importlib.py", line 40, in import_module
-    __import__(name)
-  File "/home/box/web/ask/ask/settings.py", line 40
-    INSTALLED_APPS = ('qa',) + tuple(INSTALLED_APPS)
-    ^
-IndentationError: unexpected indent
-2016-03-10 06:13:08 [145] [ERROR] Error handling request
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 126, in handle_request
-    respiter = self.wsgi(environ, resp.start_response)
-  File "/usr/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 187, in __call__
-    self.load_middleware()
-  File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py", line 44, in load_middleware
-    for middleware_path in settings.MIDDLEWARE_CLASSES:
-  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 54, in __getattr__
-    self._setup(name)
-  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 49, in _setup
-    self._wrapped = Settings(settings_module)
-  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 128, in __init__
-    mod = importlib.import_module(self.SETTINGS_MODULE)
-  File "/usr/lib/python2.7/dist-packages/django/utils/importlib.py", line 40, in import_module
-    __import__(name)
-  File "/home/box/web/ask/ask/settings.py", line 40
-    INSTALLED_APPS = ('qa',) + tuple(INSTALLED_APPS)
-    ^
-IndentationError: unexpected indent
-2016-03-10 06:13:51 [146] [ERROR] Error handling request
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 126, in handle_request
-    respiter = self.wsgi(environ, resp.start_response)
-  File "/usr/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 187, in __call__
-    self.load_middleware()
-  File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py", line 44, in load_middleware
-    for middleware_path in settings.MIDDLEWARE_CLASSES:
-  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 54, in __getattr__
-    self._setup(name)
-  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 49, in _setup
-    self._wrapped = Settings(settings_module)
-  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 128, in __init__
-    mod = importlib.import_module(self.SETTINGS_MODULE)
-  File "/usr/lib/python2.7/dist-packages/django/utils/importlib.py", line 40, in import_module
-    __import__(name)
-  File "/home/box/web/ask/ask/settings.py", line 40
-    INSTALLED_APPS = ('qa',) + tuple(INSTALLED_APPS)
-    ^
-IndentationError: unexpected indent
-2016-03-16 11:25:35 [1096] [INFO] Starting gunicorn 17.5
-2016-03-16 11:25:35 [1096] [INFO] Listening at: http://0.0.0.0:8000 (1096)
-2016-03-16 11:25:35 [1096] [INFO] Using worker: sync
-2016-03-16 11:25:35 [1101] [INFO] Booting worker with pid: 1101
-2016-03-16 11:25:35 [1102] [INFO] Booting worker with pid: 1102
-2016-03-16 11:26:06 [1096] [INFO] Handling signal: term
-2016-03-16 11:26:06 [1101] [INFO] Worker exiting (pid: 1101)
-2016-03-16 11:26:06 [1102] [INFO] Worker exiting (pid: 1102)
-2016-03-16 11:26:06 [1096] [INFO] Shutting down: Master
-2016-03-16 11:26:06 [1191] [INFO] Starting gunicorn 17.5
-2016-03-16 11:26:06 [1191] [INFO] Listening at: http://0.0.0.0:8000 (1191)
-2016-03-16 11:26:06 [1191] [INFO] Using worker: sync
-2016-03-16 11:26:06 [1197] [INFO] Booting worker with pid: 1197
-2016-03-16 11:26:06 [1198] [INFO] Booting worker with pid: 1198
-2016-03-16 11:34:44 [1191] [INFO] Handling signal: term
-2016-03-16 11:34:44 [1198] [INFO] Worker exiting (pid: 1198)
-2016-03-16 11:34:44 [1197] [INFO] Worker exiting (pid: 1197)
-2016-03-16 11:34:45 [1191] [INFO] Shutting down: Master
-2016-03-16 11:34:45 [1300] [INFO] Starting gunicorn 17.5
-2016-03-16 11:34:45 [1300] [INFO] Listening at: http://0.0.0.0:8000 (1300)
-2016-03-16 11:34:45 [1300] [INFO] Using worker: sync
-2016-03-16 11:34:45 [1306] [INFO] Booting worker with pid: 1306
-2016-03-16 11:34:45 [1307] [INFO] Booting worker with pid: 1307
-2016-03-21 08:32:05 [700] [INFO] Starting gunicorn 17.5
-2016-03-21 08:32:05 [700] [INFO] Listening at: http://0.0.0.0:8000 (700)
-2016-03-21 08:32:05 [700] [INFO] Using worker: sync
-2016-03-21 08:32:05 [706] [INFO] Booting worker with pid: 706
-2016-03-21 08:32:05 [709] [INFO] Booting worker with pid: 709
-2016-03-21 09:21:30 [1100] [INFO] Starting gunicorn 17.5
-2016-03-21 09:21:30 [1100] [INFO] Listening at: http://0.0.0.0:8000 (1100)
-2016-03-21 09:21:30 [1100] [INFO] Using worker: sync
-2016-03-21 09:21:30 [1106] [INFO] Booting worker with pid: 1106
-2016-03-21 09:21:30 [1107] [INFO] Booting worker with pid: 1107
+2016-03-22 10:56:06 [1247] [INFO] Starting gunicorn 17.5
+2016-03-22 10:56:06 [1247] [INFO] Listening at: http://0.0.0.0:8000 (1247)
+2016-03-22 10:56:06 [1247] [INFO] Using worker: sync
+2016-03-22 10:56:06 [1252] [INFO] Booting worker with pid: 1252
+2016-03-22 10:56:06 [1253] [INFO] Booting worker with pid: 1253
+2016-03-22 11:12:16 [1247] [INFO] Handling signal: term
+2016-03-22 11:12:16 [1252] [INFO] Worker exiting (pid: 1252)
+2016-03-22 11:12:16 [1253] [INFO] Worker exiting (pid: 1253)
+2016-03-22 11:12:16 [1247] [INFO] Shutting down: Master
+2016-03-22 11:12:17 [1698] [INFO] Starting gunicorn 17.5
+2016-03-22 11:12:17 [1698] [INFO] Listening at: http://0.0.0.0:8000 (1698)
+2016-03-22 11:12:17 [1698] [INFO] Using worker: sync
+2016-03-22 11:12:17 [1704] [INFO] Booting worker with pid: 1704
+2016-03-22 11:12:17 [1705] [INFO] Booting worker with pid: 1705
