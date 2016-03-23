@@ -12,3 +12,196 @@
 2016-03-22 11:12:17 [1698] [INFO] Using worker: sync
 2016-03-22 11:12:17 [1704] [INFO] Booting worker with pid: 1704
 2016-03-22 11:12:17 [1705] [INFO] Booting worker with pid: 1705
+2016-03-23 10:40:11 [1384] [INFO] Starting gunicorn 17.5
+2016-03-23 10:40:11 [1384] [INFO] Listening at: http://0.0.0.0:8000 (1384)
+2016-03-23 10:40:11 [1384] [INFO] Using worker: sync
+2016-03-23 10:40:11 [1389] [INFO] Booting worker with pid: 1389
+2016-03-23 10:40:11 [1390] [INFO] Booting worker with pid: 1390
+2016-03-23 10:40:22 [1390] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 126, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 187, in __call__
+    self.load_middleware()
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py", line 44, in load_middleware
+    for middleware_path in settings.MIDDLEWARE_CLASSES:
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 54, in __getattr__
+    self._setup(name)
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 50, in _setup
+    self._configure_logging()
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 80, in _configure_logging
+    logging_config_func(self.LOGGING)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'file': [Errno 13] Permission denied: '/home/box/web/mysite.log'
+2016-03-23 10:45:13 [1384] [INFO] Handling signal: term
+2016-03-23 10:45:13 [1390] [INFO] Worker exiting (pid: 1390)
+2016-03-23 10:45:13 [1389] [INFO] Worker exiting (pid: 1389)
+2016-03-23 10:45:13 [1384] [INFO] Shutting down: Master
+2016-03-23 10:45:13 [1506] [INFO] Starting gunicorn 17.5
+2016-03-23 10:45:13 [1506] [INFO] Listening at: http://0.0.0.0:8000 (1506)
+2016-03-23 10:45:13 [1506] [INFO] Using worker: sync
+2016-03-23 10:45:13 [1512] [INFO] Booting worker with pid: 1512
+2016-03-23 10:45:13 [1513] [INFO] Booting worker with pid: 1513
+2016-03-23 10:45:18 [1513] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 126, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 187, in __call__
+    self.load_middleware()
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py", line 44, in load_middleware
+    for middleware_path in settings.MIDDLEWARE_CLASSES:
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 54, in __getattr__
+    self._setup(name)
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 50, in _setup
+    self._configure_logging()
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 80, in _configure_logging
+    logging_config_func(self.LOGGING)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'file': [Errno 13] Permission denied: '/home/box/web/mysite.log'
+2016-03-23 10:47:37 [1506] [INFO] Handling signal: term
+2016-03-23 10:47:37 [1512] [INFO] Worker exiting (pid: 1512)
+2016-03-23 10:47:37 [1513] [INFO] Worker exiting (pid: 1513)
+2016-03-23 10:47:37 [1506] [INFO] Shutting down: Master
+2016-03-23 10:47:37 [1614] [INFO] Starting gunicorn 17.5
+2016-03-23 10:47:37 [1614] [INFO] Listening at: http://0.0.0.0:8000 (1614)
+2016-03-23 10:47:37 [1614] [INFO] Using worker: sync
+2016-03-23 10:47:37 [1620] [INFO] Booting worker with pid: 1620
+2016-03-23 10:47:37 [1621] [INFO] Booting worker with pid: 1621
+2016-03-23 10:47:43 [1621] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 126, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 187, in __call__
+    self.load_middleware()
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py", line 44, in load_middleware
+    for middleware_path in settings.MIDDLEWARE_CLASSES:
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 54, in __getattr__
+    self._setup(name)
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 50, in _setup
+    self._configure_logging()
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 80, in _configure_logging
+    logging_config_func(self.LOGGING)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'file': [Errno 13] Permission denied: '/home/box/web/mysite.log'
+2016-03-23 10:47:48 [1620] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 126, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 187, in __call__
+    self.load_middleware()
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py", line 44, in load_middleware
+    for middleware_path in settings.MIDDLEWARE_CLASSES:
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 54, in __getattr__
+    self._setup(name)
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 50, in _setup
+    self._configure_logging()
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 80, in _configure_logging
+    logging_config_func(self.LOGGING)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'file': [Errno 13] Permission denied: '/home/box/web/mysite.log'
+2016-03-23 10:49:28 [1614] [INFO] Handling signal: term
+2016-03-23 10:49:28 [1620] [INFO] Worker exiting (pid: 1620)
+2016-03-23 10:49:28 [1621] [INFO] Worker exiting (pid: 1621)
+2016-03-23 10:49:28 [1614] [INFO] Shutting down: Master
+2016-03-23 10:49:28 [1724] [INFO] Starting gunicorn 17.5
+2016-03-23 10:49:28 [1724] [INFO] Listening at: http://0.0.0.0:8000 (1724)
+2016-03-23 10:49:28 [1724] [INFO] Using worker: sync
+2016-03-23 10:49:28 [1730] [INFO] Booting worker with pid: 1730
+2016-03-23 10:49:28 [1731] [INFO] Booting worker with pid: 1731
+2016-03-23 10:49:42 [1730] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 126, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 187, in __call__
+    self.load_middleware()
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py", line 44, in load_middleware
+    for middleware_path in settings.MIDDLEWARE_CLASSES:
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 54, in __getattr__
+    self._setup(name)
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 50, in _setup
+    self._configure_logging()
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 80, in _configure_logging
+    logging_config_func(self.LOGGING)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'file': [Errno 13] Permission denied: '/home/box/web/mysite.log'
+2016-03-23 10:49:52 [1731] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 126, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 187, in __call__
+    self.load_middleware()
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py", line 44, in load_middleware
+    for middleware_path in settings.MIDDLEWARE_CLASSES:
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 54, in __getattr__
+    self._setup(name)
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 50, in _setup
+    self._configure_logging()
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 80, in _configure_logging
+    logging_config_func(self.LOGGING)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'file': [Errno 13] Permission denied: '/home/box/web/mysite.log'
+2016-03-23 10:51:45 [1724] [INFO] Handling signal: term
+2016-03-23 10:51:45 [1730] [INFO] Worker exiting (pid: 1730)
+2016-03-23 10:51:45 [1731] [INFO] Worker exiting (pid: 1731)
+2016-03-23 10:51:45 [1724] [INFO] Shutting down: Master
+2016-03-23 10:51:46 [1832] [INFO] Starting gunicorn 17.5
+2016-03-23 10:51:46 [1832] [INFO] Listening at: http://0.0.0.0:8000 (1832)
+2016-03-23 10:51:46 [1832] [INFO] Using worker: sync
+2016-03-23 10:51:46 [1838] [INFO] Booting worker with pid: 1838
+2016-03-23 10:51:46 [1839] [INFO] Booting worker with pid: 1839
+2016-03-23 10:52:02 [1839] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 126, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 187, in __call__
+    self.load_middleware()
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py", line 44, in load_middleware
+    for middleware_path in settings.MIDDLEWARE_CLASSES:
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 54, in __getattr__
+    self._setup(name)
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 50, in _setup
+    self._configure_logging()
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 80, in _configure_logging
+    logging_config_func(self.LOGGING)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'file': [Errno 13] Permission denied: '/home/box/web/mysite.log'
+2016-03-23 10:52:14 [1838] [ERROR] Error handling request
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/sync.py", line 126, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/wsgi.py", line 187, in __call__
+    self.load_middleware()
+  File "/usr/lib/python2.7/dist-packages/django/core/handlers/base.py", line 44, in load_middleware
+    for middleware_path in settings.MIDDLEWARE_CLASSES:
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 54, in __getattr__
+    self._setup(name)
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 50, in _setup
+    self._configure_logging()
+  File "/usr/lib/python2.7/dist-packages/django/conf/__init__.py", line 80, in _configure_logging
+    logging_config_func(self.LOGGING)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'file': [Errno 13] Permission denied: '/home/box/web/mysite.log'

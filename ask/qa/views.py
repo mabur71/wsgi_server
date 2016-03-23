@@ -126,7 +126,7 @@ def main_page(request):
 
         'page': page,
 
-        'title': 'Все вопросы:',
+        'title': 'F',
 
     })
 
@@ -154,7 +154,7 @@ def popular_page(request):
 
         'page': page,
 
-        'title': 'Популярные вопросы:',
+        'title': 'Popular questions',
 
     })
 
@@ -224,11 +224,11 @@ def signup_page(request):
 
         return render(request, 'signup.html', {
 
-            'title': 'Регистрация нового пользователя',
+            'title': 'New reg',
 
             'form': form, 
 
-            'button-text': 'Регистировать',
+            'button-text': 'Reg',
 
         })
 
@@ -274,11 +274,11 @@ def login_page(request):
 
         return render(request, 'login.html', {
 
-            'title': 'Аутентификация',
+            'title': 'Aut-n',
 
             'form': form,
 
-            'button-text': 'Войти',
+            'button-text': 'Enter',
 
         })
 
